@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List App</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  <body>
+    <!-- <header>
+      <h1>My To Do List</h1>
+    </header>
+
+    <form action="">
+      <input type="text" id="todo-input" placeholder="Add a new task" />
+      <button id="add-btn">
+        <ion-icon name="add-circle"></ion-icon>
+      </button>
+      <div id="filter-container">
+        <label for="filter-select">Filter:</label>
+        <select id="filter-select" onchange="filterTasks(this.value)">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="incomplete">Incomplete</option>
+        </select>
+    </form> -->
+
+    <header id="todo-container">
+      <div id="todo-header">To-Do List</div>
+    </header>
+    <form action="">
+      <input type="text" id="todo-input" placeholder="Add a new task" />
+      <button id="add-btn">
+        <ion-icon class="icon" name="add-circle"></ion-icon>
+      </button>
+      <div id="filter-container" class="select">
+        <!-- <label for="filter-select">Filter:</label> -->
+        <select id="filter-select" onchange="filterTasks(this.value)">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="incomplete">Incomplete</option>
+        </select>
+      </div>
+    </form>
+
+    <div class="todo-container">
+      <ul id="todo-list"></ul>
+    </div>
+
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
